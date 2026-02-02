@@ -16,7 +16,9 @@ Designed exclusively for Bambu Lab printers
 ## Installation
 Click the link below to install AutoBam using ClickOnce:
 
-👉 https://joseluisct.github.io/AutoBam/
+<a href="https://joseluisct.github.io/AutoBam/" target="_blank" style="font-size:18px; font-weight:bold;">
+🚀 Install AutoBam
+</a>
 
 ## Support
 
