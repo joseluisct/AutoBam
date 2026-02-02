@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoBam – Instalación</title>
+    <title>AutoBam – Installation</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -61,7 +61,7 @@
             text-decoration: none;
             font-size: 18px;
             margin-top: 10px;
-            margin-bottom: 10px; /* ESPACIO EXTRA */
+            margin-bottom: 10px;
             transition: background 0.2s;
         }
 
@@ -69,13 +69,13 @@
             background: #174667;
         }
 
-		.footer {
-			text-align: center;
-			margin-top: 20px;   /* antes 40px */
-			padding: 0px;      /* antes 20px */
-			font-size: 14px;
-			color: #777;
-		}
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 0px;
+            font-size: 14px;
+            color: #777;
+        }
 
         .footer a {
             color: #1c5280;
@@ -85,10 +85,13 @@
         .footer a:hover {
             text-decoration: underline;
         }
-		
-		.espaciotop {
-			margin-bottom: 20px;
-		}
+
+        .espaciobottom {
+            margin-bottom: 30px;
+        }
+        .espaciotop {
+            margin-top: 30px;
+        }
     </style>
 </head>
 
@@ -97,39 +100,78 @@
 <header>
     <img src="autobam.png" alt="AutoBam Logo">
     <h1>AutoBam</h1>
-    <p>Instalación y actualizaciones automáticas</p>
+    <p>Automatic installation and updates</p>
 </header>
 
 <div class="container">
-    <h2>Instalar AutoBam</h2>
+    <h2>Install AutoBam</h2>
     <p>
-        AutoBam es una herramienta ligera diseñada para mejorar tu flujo de trabajo con Bambu Studio.
-        Puedes instalar la aplicación haciendo clic en el siguiente botón:
+        AutoBam is a lightweight tool designed to improve your workflow with Bambu Studio.
+        You can install the application by clicking the button below:
     </p>
 
-    <a class="button" href="AutoBam.application">Instalar AutoBam</a>
-	<p class="espaciotop">La instalación se actualizará automáticamente cuando haya nuevas versiones.</p>
+    <div id="browser-message"></div>
 
-    <h2>Requisitos previos</h2>
-    <p>Necesitas tener instalado:</p>
+    <a class="button" href="AutoBam.application">Install AutoBam</a>
+    <p class="espaciobottom">The installation will update automatically when new versions are available.</p>
+
+    <h2>Prerequisites</h2>
+    <p>You need to have the following installed:</p>
     <ul>
         <li>Microsoft .NET Framework 4.8.1</li>
     </ul>
-	<br/>
-    <p>
-        Si lo prefieres, también puedes descargar el instalador completo:
+
+    <p class="espaciotop">
+        If you prefer, you can also download the full installer:
     </p>
 
-    <a href="setup.exe">Descargar instalador</a>
+    <a href="setup.exe">Download installer</a>
 </div>
 
 <div class="footer">
     <p>
-        <a href="https://github.com/joseluisct/AutoBam">Repositorio oficial en GitHub</a>
+        <a href="https://github.com/joseluisct/AutoBam">Official GitHub Repository</a>
         &nbsp;•&nbsp;
-        <a href="https://go.microsoft.com/fwlink/?LinkId=154571">Información sobre ClickOnce</a>
+        <a href="https://go.microsoft.com/fwlink/?LinkId=154571">About ClickOnce</a>
     </p>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const ua = navigator.userAgent.toLowerCase();
+    const isEdge = ua.includes("edg/");
+    const isChrome = ua.includes("chrome") && !isEdge;
+
+    const msgContainer = document.getElementById("browser-message");
+
+    if (!msgContainer) return;
+
+    if (isEdge) {
+        msgContainer.innerHTML = `
+            <div style="padding: 12px; background: #e8f5e9; border-left: 4px solid #4caf50;">
+                <strong>Direct installation available:</strong> You are using Microsoft Edge. 
+                Click <em>Install AutoBam</em> and the installation will start automatically.
+            </div>
+        `;
+    } 
+    else if (isChrome) {
+        msgContainer.innerHTML = `
+            <div style="padding: 12px; background: #fff8e1; border-left: 4px solid #ffb300;">
+                <strong>Note for Chrome users:</strong> The installer will be downloaded as a 
+                <code>.application</code> file. Once downloaded, double‑click it to start the installation.
+            </div>
+        `;
+    } 
+    else {
+        msgContainer.innerHTML = `
+            <div style="padding: 12px; background: #e3f2fd; border-left: 4px solid #2196f3;">
+                <strong>ClickOnce installation:</strong> If your browser downloads the 
+                <code>.application</code> file, simply open it to begin the installation.
+            </div>
+        `;
+    }
+});
+</script>
 
 </body>
 </html>
