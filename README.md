@@ -29,4 +29,6 @@ This repository does not contain the source code.
 The full project is maintained in a private repository.
 
 ## Screenshot
+Below is a preview of the AutoBam interface:
+
 ![AutoBam Screenshot](assets/autobam-about.png)
