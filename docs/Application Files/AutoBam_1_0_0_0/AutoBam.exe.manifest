@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AutoBam.exe" size="409088">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AutoBam.exe" size="394752">
       <assemblyIdentity name="AutoBam" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KBnEjuZSnETEcH1HjI8TApl8KBw9YpMA/jJkdNU9rM0=</dsig:DigestValue>
+        <dsig:DigestValue>QuCUxIS+VhiPbm2H0dIQyDin9f182uxnZJN1pg+JXew=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Q39P1oDR8Eb1f2pjayOumu7ZZKFt69TnOf+YoPBoqb0=</dsig:DigestValue>
+        <dsig:DigestValue>kVd36dl333qfRTq+lHLXd97rmLtERs0JVPElomrEGRo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
