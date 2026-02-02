@@ -18,11 +18,13 @@ Click the link below to install AutoBam using ClickOnce:
 👉 [Installation link will appear here once GitHub Pages is enabled]
 
 ## Support
+
 If you find AutoBam useful, you can support the project with a voluntary tip:
 
-Ko‑fi: https://ko-fi.com/jlmmct
+[![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/jlmmct)
+&nbsp;&nbsp;&nbsp;
+[![PayPal](https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png)](https://www.paypal.com/paypalme/JLMMCT)
 
-PayPal: https://www.paypal.com/paypalme/JLMMCT
 
 ## Notes
 This repository does not contain the source code.
