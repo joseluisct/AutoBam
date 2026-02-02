@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <section name="AutoBam.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false"/>
+        </sectionGroup>
+    </configSections>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8.1"/>
+    </startup>
+    <userSettings>
+        <AutoBam.Properties.Settings>
+            <setting name="PrimeraVez" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="NumeroVeces" serializeAs="String">
+                <value>2</value>
+            </setting>
+            <setting name="AutoEjectGcode" serializeAs="String">
+                <value>; ======== GCODE AUTOEJECT DE LA BAMBU LAB A1 (no me hago responsable de daños) =============
+G91
+G1 E-20 F1500 ; Retraer 20 mm para que no gotee filamento
+M104 S0 ; apagar hotend
+
+G90
+G1 X-13.5 Y180 F3600 ; Ir atras y al purgador para esperar a sacar pieza Y 180 En caso de A1 Mini Y235 en caso de A1
+
+G91
+G1 Z10 F600
+G90
+M83
+
+; ======== expulsar pieza =============
+G0 -13.5 Y180 ; mover a purgador y esperar
+G0 Z30 ; lower X until nozzle is almost touching
+M140 S0 ; For some reason you need to set the bed temp again before
+G04 S1800 ; Esperar 1800 segundos “30min” a que la cama se enfrie
+
+; ======== sonido inicio auto-eject =============
+M1006 A0 B10 L100 C37 D10 M60 E37 F10 N60
+M1006 A0 B10 L100 C37 D10 M60 E37 F10 N60
+M1006 A0 B10 L100 C37 D10 M60 E37 F10 N60
+M1006 A0 B10 L100 C37 D10 M60 E37 F10 N60
+M1006 A0 B10 L100 C37 D10 M60 E37 F10 N60
+M1006 A0 B10 L100 C37 D10 M60 E37 F10 N60
+M1006 A0 B10 L100 C37 D10 M60 E37 F10 N60
+M1006 A0 B10 L100 C37 D10 M60 E37 F10 N60
+M1006 A0 B10 L100 C37 D10 M60 E37 F10 N60
+
+; ======== empujar en los 3 sentidos =============
+G0 X128 Y256 F1000
+G0 Z3
+G0 X128 Y1 F1000
+G0 X128 Y256 F1000
+
+G0 X84 Y256 F1000
+G0 X84 Y1 F1000
+G0 X84 Y256 F1000
+
+G0 X193 Y256 F1000
+G0 X193 Y1 F1000
+G0 X193 Y256 F1000
+
+M400 S1</value>
+            </setting>
+            <setting name="ShowNoti" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="OpenBambu" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="Associate" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="ContextMenu" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="EnviarErrores" serializeAs="String">
+                <value>True</value>
+            </setting>
+        </AutoBam.Properties.Settings>
+    </userSettings>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" publicKeyToken="b03f5f7f11d50a3a" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-6.0.0.0" newVersion="6.0.0.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Memory" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral"/>
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.2" newVersion="4.0.1.2"/>
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoBam – Instalación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: #1c5280;
+            color: white;
+            padding: 40px 20px 30px 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 110px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #1c5280;
+            font-size: 22px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #1c5280;
+            color: white;
+            padding: 14px 26px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 10px; /* ESPACIO EXTRA */
+            transition: background 0.2s;
+        }
+
+        .button:hover {
+            background: #174667;
+        }
+
+		.footer {
+			text-align: center;
+			margin-top: 20px;   /* antes 40px */
+			padding: 0px;      /* antes 20px */
+			font-size: 14px;
+			color: #777;
+		}
+
+        .footer a {
+            color: #1c5280;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+		
+		.espaciotop {
+			margin-bottom: 20px;
+		}
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="autobam.png" alt="AutoBam Logo">
+    <h1>AutoBam</h1>
+    <p>Instalación y actualizaciones automáticas</p>
+</header>
+
+<div class="container">
+    <h2>Instalar AutoBam</h2>
+    <p>
+        AutoBam es una herramienta ligera diseñada para mejorar tu flujo de trabajo con Bambu Studio.
+        Puedes instalar la aplicación haciendo clic en el siguiente botón:
+    </p>
+
+    <a class="button" href="AutoBam.application">Instalar AutoBam</a>
+	<p class="espaciotop">La instalación se actualizará automáticamente cuando haya nuevas versiones.</p>
+
+    <h2>Requisitos previos</h2>
+    <p>Necesitas tener instalado:</p>
+    <ul>
+        <li>Microsoft .NET Framework 4.8.1</li>
+    </ul>
+	<br/>
+    <p>
+        Si lo prefieres, también puedes descargar el instalador completo:
+    </p>
+
+    <a href="setup.exe">Descargar instalador</a>
+</div>
+
+<div class="footer">
+    <p>
+        <a href="https://github.com/joseluisct/AutoBam">Repositorio oficial en GitHub</a>
+        &nbsp;•&nbsp;
+        <a href="https://go.microsoft.com/fwlink/?LinkId=154571">Información sobre ClickOnce</a>
+    </p>
+</div>
+
+</body>
+</html>
