@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "Ht7gSzkq",
+  "version": "OV41S/fz",
   "assets": [
     {
       "hash": "sha256-VCAlNeVcupBDIuQB3LSJguIPS9AoooeJrmzElzXVzh8=",
@@ -186,8 +186,8 @@ self.assetsManifest = {
       "url": "_content/Microsoft.FluentUI.AspNetCore.Components/js/loading-theme.js"
     },
     {
-      "hash": "sha256-5cFKL1QX7O+MakbjMqYjNdb9jhPYiUWZdH68Y/VoP0M=",
-      "url": "_framework/AutoBam.nllzarlclo.wasm"
+      "hash": "sha256-S1cIWvILFruFn0FcuosXFNUblKd2ogTyR7YhJRAa0as=",
+      "url": "_framework/AutoBam.pf4hkhwkfq.wasm"
     },
     {
       "hash": "sha256-8K2teXvL3JRL5C11zrbi4XnPgeZLmr/2yW1nKjK9tQs=",
@@ -418,10 +418,6 @@ self.assetsManifest = {
       "url": "_framework/blazor.webassembly.66stpp682q.js"
     },
     {
-      "hash": "sha256-kOPT6DN0Un2cTTyRcYxXc9AOz0h34DUnNdOBdPcuCCM=",
-      "url": "_framework/dotnet.4zcnvvehu1.js"
-    },
-    {
       "hash": "sha256-zE11fbcG2CeLl1Zi+NJgMOfWpdjuUWNte+icrtAO58I=",
       "url": "_framework/dotnet.native.87vtjjdetb.js"
     },
@@ -430,12 +426,16 @@ self.assetsManifest = {
       "url": "_framework/dotnet.native.befq3iek54.wasm"
     },
     {
+      "hash": "sha256-xpcCvyHDCNzSB5eVpwfpxhl9vQeqHBBcyHUJwKgNCLI=",
+      "url": "_framework/dotnet.q88efyhcad.js"
+    },
+    {
       "hash": "sha256-2lZh9yO0fnzm3Xt7yV+Kox3DH3nK7L8hDhm84VT1xco=",
       "url": "_framework/dotnet.runtime.2tx45g8lli.js"
     },
     {
-      "hash": "sha256-HFJFbmOc0JZSBcuR7qfChIgJJTsxUrBEWxTkvt354/I=",
-      "url": "_framework/es/AutoBam.resources.cselk8i9pa.wasm"
+      "hash": "sha256-wapb+bsJM5p0cFNWf9TqvE2y2teoHohwhtUs128u7+w=",
+      "url": "_framework/es/AutoBam.resources.h0vjrz6nz8.wasm"
     },
     {
       "hash": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -474,7 +474,7 @@ self.assetsManifest = {
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-PlVNZI7HjcWAbiuw/McMgGa/0Ix6FXKg15W5CISMeDA=",
+      "hash": "sha256-4GUoJg+l5kT/VIeo0ghjBR5CRaRBBio4ZCFs/iR9sFg=",
       "url": "index.html"
     },
     {
