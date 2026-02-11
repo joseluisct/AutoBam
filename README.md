@@ -54,7 +54,7 @@ If you find AutoBam useful, you can support the project with a voluntary tip:
   <img src="assets/autobam-web.png" alt="AutoBam Web" width="600">
 </p>
 
-## 📺 Vídeo de demostración
+## 📺 Demo Video
 <p align="center">
   <a href="https://youtu.be/YK556nRSpOM">
     <img src="https://img.youtube.com/vi/YK556nRSpOM/0.jpg" alt="Vídeo en YouTube">
