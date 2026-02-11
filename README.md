@@ -55,7 +55,12 @@ If you find AutoBam useful, you can support the project with a voluntary tip:
 </p>
 
 ## 📺 Vídeo de demostración
-[![Mira el vídeo en YouTube](https://img.youtube.com/vi/YK556nRSpOM/0.jpg)](https://youtu.be/YK556nRSpOM)
+<p align="center">
+  <a href="https://youtu.be/YK556nRSpOM">
+    <img src="https://img.youtube.com/vi/YK556nRSpOM/0.jpg" alt="Vídeo en YouTube">
+  </a>
+</p>
+
 
 ## 🛠️ Technology
 - .NET 10 
