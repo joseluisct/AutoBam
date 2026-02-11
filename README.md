@@ -54,6 +54,9 @@ If you find AutoBam useful, you can support the project with a voluntary tip:
   <img src="assets/autobam-web.png" alt="AutoBam Web" width="600">
 </p>
 
+## 📺 Vídeo de demostración
+[![Mira el vídeo en YouTube](https://img.youtube.com/vi/YK556nRSpOM/0.jpg)](https://youtu.be/YK556nRSpOM)
+
 ## 🛠️ Technology
 - .NET 10 
 - Blazor WebAssembly 
