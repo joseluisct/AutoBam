@@ -19,15 +19,15 @@ body {
 }
 
 .body-content {
-    align-self: stretch;
     height: calc(100dvh - 86px) !important;
-    display: flex;
+    overflow-y: auto;
+    display: block; /* ← clave */
 }
 
 .content {
     padding: 0.5rem 1.5rem;
-    align-self: stretch !important;
     width: 100%;
+    height: auto; /* ← clave */
 }
 
 footer {
