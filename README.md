@@ -10,7 +10,7 @@
 </p>
 
 # AutoBam — Desktop Installer & Web Version
-AutoBam is a lightweight workflow utility designed to streamline repetitive tasks when working with **Bambu Studio**. This repository hosts the **public installer** for the Windows desktop version and the **published WebAssembly build** of AutoBam. The application’s source code is private and not included here.
+AutoBam is a lightweight workflow utility designed to streamline repetitive tasks when working with **Bambu Studio**. This repository hosts the **public installer** for the Windows desktop version and the **published WebAssembly build** of AutoBam.
 
 ## ✨ Features
 - Automates repetitive tasks
